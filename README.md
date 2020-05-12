@@ -57,7 +57,7 @@ Then start a lighttpd container with:
 
 ## Build
 
-First clone or download the [spujadas/lighttpd-docker](https://github.com/spujadas/lighttpd-docker) GitHub repository, open a shell in the newly created `lighttpd-docker` directory, then build the image and run a container using Docker, Docker Compose, or Docker Buildx, as explained below.
+First clone or download the [gsmlg/lighttpd-docker](https://github.com/gsmlg/lighttpd-docker) GitHub repository, open a shell in the newly created `lighttpd-docker` directory, then build the image and run a container using Docker, Docker Compose, or Docker Buildx, as explained below.
 
 ### Build with Docker
 
