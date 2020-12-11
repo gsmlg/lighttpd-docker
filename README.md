@@ -29,11 +29,11 @@ In the instructions that follow, replace:
 
 With the default configuration files:
 
-	$ sudo docker run --rm -t -v <home-directory>:/var/www/localhost/htdocs -p <http-port>:80 sebp/lighttpd
+	$ sudo docker run --rm -t -v <home-directory>:/var/www/localhost -p <http-port>:80 sebp/lighttpd
 
 With custom configuration files:
 
-	$ sudo docker run --rm -t -v <home-directory>:/var/www/localhost/htdocs -v <config-directory>:/etc/lighttpd -p <http-port>:80 sebp/lighttpd
+	$ sudo docker run --rm -t -v <home-directory>:/var/www/localhost -v <config-directory>:/etc/lighttpd -p <http-port>:80 sebp/lighttpd
 
 ### Start a container with Docker Compose
 
@@ -42,7 +42,7 @@ Add the following lines in an existing or a new `docker-compose.yml` file:
 	lighttpd:
 	  image: sebp/lighttpd
 	  volumes:
-	    - <home-directory>:/var/www/localhost/htdocs
+	    - <home-directory>:/var/www/localhost
 	    - <config-directory>:/etc/lighttpd
 	  ports:
 	    - "<http-port>:80"
